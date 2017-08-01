@@ -18,6 +18,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -40,7 +45,13 @@ dependencies {
     // Retrofit
     compile 'com.squareup.retrofit2:retrofit:2.3.0'
     compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
-    compile 'com.squareup.okhttp3:okhttp-urlconnection:3.2.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    //OKHTTP
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    compile 'com.squareup.okhttp3:okhttp-urlconnection:3.6.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+
+    retrolambdaConfig 'net.orfjackal.retrolambda:retrolambda:+'
 
     /*Image Loader*/
     compile 'com.squareup.picasso:picasso:2.5.2'

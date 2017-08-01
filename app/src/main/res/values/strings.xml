@@ -4,4 +4,5 @@
 
     <string name="text_unknown_error">Something went wrong. Try later.</string>
     <string name="text_internet_error">Something went wrong. Check your internet connection.</string>
+    <string name="text_you_have_no_tracks">No data was retrieved! Hit Refresh to try again!</string>
 </resources>

@@ -6,6 +6,7 @@
 
     <fragment
         android:id="@+id/frame_content"
+        android:name="wrightstuff.wowscrubber.ui.guild.GuildFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
