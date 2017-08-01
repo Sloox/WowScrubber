@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WowScrubber</string>
+
+
+    <string name="text_unknown_error">Something went wrong. Try later.</string>
+    <string name="text_internet_error">Something went wrong. Check your internet connection.</string>
+</resources>
