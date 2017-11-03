@@ -1,8 +1,9 @@
 package wrightstuff.wowscrubber.ui.guild;
 
-import java.util.List;
+import android.content.Context;
 
-import wrightstuff.wowscrubber.model.GuildNews;
+import wrightstuff.wowscrubber.model.guild.GuildNews;
+import wrightstuff.wowscrubber.model.guild.News;
 import wrightstuff.wowscrubber.ui.base.BasePresenter;
 import wrightstuff.wowscrubber.ui.base.BaseView;
 
@@ -12,11 +13,15 @@ import wrightstuff.wowscrubber.ui.base.BaseView;
 
 public interface GuildContract {
 
-        interface View extends BaseView {
-            void setDataToAdapter(GuildNews data);
-        }
+    interface View extends BaseView {
+        void setDataToAdapter(GuildNews data);
 
-        interface Presenter extends BasePresenter<View> {
-            void updateTracks();
-        }
+        void enableFab(boolean visibility);
+    }
+
+    interface Presenter extends BasePresenter<View> {
+        void updateGuildNews();
+
+        void sendNewsItemMessage(final Context context, News userNews);
+    }
 }

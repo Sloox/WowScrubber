@@ -22,7 +22,7 @@
         </activity>
 
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.MainGuildActivity"
             android:screenOrientation="nosensor" />
 
     </application>

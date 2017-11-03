@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="eu_base">https://eu.api.battle.net/</string>
+    <string name="us_base">https://us.api.battle.net/</string>
+    <string name="eu_picture_base">http://render-api-eu.worldofwarcraft.com</string>
+    <string name="eu_profile_picture_base">http://media.blizzard.com/wow/icons/56/</string>
+</resources>

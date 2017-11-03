@@ -1,5 +1,5 @@
 
-package wrightstuff.wowscrubber.model;
+package wrightstuff.wowscrubber.model.guild;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

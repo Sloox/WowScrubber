@@ -1,17 +1,14 @@
 package wrightstuff.wowscrubber.api.realm;
 
-import android.util.Base64;
+import android.content.Context;
+import android.support.annotation.NonNull;
 
 import io.reactivex.Observable;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.http.Body;
 import retrofit2.http.GET;
-import retrofit2.http.POST;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
 import wrightstuff.wowscrubber.api.BaseService;
-import wrightstuff.wowscrubber.model.GuildNews;
+import wrightstuff.wowscrubber.model.guild.GuildNews;
 
 
 public class RealmService extends BaseService {
@@ -22,8 +19,8 @@ public class RealmService extends BaseService {
         return realmApi;
     }
 
-    public RealmService() {
-        super();//creates the retrofit class
+    public RealmService(@NonNull final Context context) {
+        super(context, ServiceType.EU_BASE);//creates the retrofit class, only EU supported for now
         realmApi = mRetrofit.create(RealmApi.class);
     }
 

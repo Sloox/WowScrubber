@@ -5,9 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 
 import wrightstuff.wowscrubber.R;
 
-/**
- * Created by michaelwright on 01/08/2017.
- */
 
 public class BaseActivity extends AppCompatActivity {
 

@@ -1,9 +1,10 @@
 
-package wrightstuff.wowscrubber.model;
+package wrightstuff.wowscrubber.model.user;
 
-import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+
+import java.util.List;
 
 public class Achievement {
 
@@ -19,9 +20,12 @@ public class Achievement {
     @SerializedName("description")
     @Expose
     private String description;
+    @SerializedName("reward")
+    @Expose
+    private String reward;
     @SerializedName("rewardItems")
     @Expose
-    private List<Object> rewardItems = null;
+    private List<RewardItem> rewardItems = null;
     @SerializedName("icon")
     @Expose
     private String icon;
@@ -67,11 +71,19 @@ public class Achievement {
         this.description = description;
     }
 
-    public List<Object> getRewardItems() {
+    public String getReward() {
+        return reward;
+    }
+
+    public void setReward(String reward) {
+        this.reward = reward;
+    }
+
+    public List<RewardItem> getRewardItems() {
         return rewardItems;
     }
 
-    public void setRewardItems(List<Object> rewardItems) {
+    public void setRewardItems(List<RewardItem> rewardItems) {
         this.rewardItems = rewardItems;
     }
 
